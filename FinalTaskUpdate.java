@@ -53,11 +53,9 @@ public class FinalTaskUpdate {
         
         boolean ulang = true;
         while (ulang) {
-            // Input nama dan validasi
             System.out.print("Nama anda siapa? -> ");
             String nama = input.nextLine().trim();
 
-            // Input tanggal dan bulan lahir
             System.out.print("Masukkan tanggal lahir (1-31): ");
             int tanggal = input.nextInt();
             if (tanggal < 1 || tanggal > 31) {
@@ -72,15 +70,13 @@ public class FinalTaskUpdate {
                 continue;
             }
 
-            // Input gender
             System.out.print("Masukkan jenis kelamin anda (cowo/cewe): ");
             String gender = input.next().toLowerCase();
-            input.nextLine(); // Consume newline
+            input.nextLine(); 
 
-            // Proses menentukan zodiak
+            // Method untuk menentukan zodiak
             NentuinZodiak(nama, tanggal, bulan, gender);
-
-            // Menanyakan apakah ingin mengulang
+            // Loop untuk mengulang program
             System.out.print("Apakah ingin mengecek zodiak lagi? (gas/sampun): ");
             String replay = input.next();
             input.nextLine(); // Consume newline
