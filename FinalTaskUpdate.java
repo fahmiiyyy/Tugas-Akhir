@@ -79,7 +79,7 @@ public class FinalTaskUpdate {
             // Loop untuk mengulang program
             System.out.print("Apakah ingin mengecek zodiak lagi? (gas/sampun): ");
             String replay = input.next();
-            input.nextLine(); // Consume newline
+            input.nextLine(); 
             ulang = replay.equalsIgnoreCase("gas");
         }
 
